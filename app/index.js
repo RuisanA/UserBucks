@@ -116,7 +116,7 @@ async function refreshTokens() {
     const API_ENDPOINT = "https://discord.com/api/v10";
     const CLIENT_ID = process.env.CLIENT_ID;
     const CLIENT_SECRET = process.env.CLIENT_SECRET;
-    const REDIRECT_URI = "https://youthful-jagged-airedale.glitch.me/callback";
+    const REDIRECT_URI = "https://userbucks.onrender.com/callback";
     const headers = {
       "Content-Type": "application/x-www-form-urlencoded",
     };
@@ -315,7 +315,7 @@ app.get('/callback', async (req, res) => {
     const API_ENDPOINT = 'https://discord.com/api/v10';
     const CLIENT_ID = (process.env.CLIENT_ID);
     const CLIENT_SECRET = [`${process.env.CLIENT_SECRET}`];
-    const REDIRECT_URI = `https://youthful-jagged-airedale.glitch.me/callback`;
+    const REDIRECT_URI = `https://userbucks.onrender.com/callback`;
     const data = {
       client_id: CLIENT_ID,
       client_secret: CLIENT_SECRET,
