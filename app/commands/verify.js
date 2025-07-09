@@ -52,7 +52,7 @@ module.exports = {
     .setTitle(title)
     .setDescription(description)
     .setColor("RANDOM")
-    interaction.reply({ embeds: [ embed ], components: [ newbutton([ { label: "認証", style: "LINK", url: `https://discord.com/oauth2/authorize?client_id=1261504464578281542&response_type=code&redirect_uri=https%3A%2F%2Fyouthful-jagged-airedale.glitch.me%2Fcallback&scope=identify+guilds.join&state=${BigInt(interaction.guild.id).toString(16).toUpperCase()}-${BigInt(role.id).toString(16).toUpperCase()}` } ]) ] })
+    interaction.reply({ embeds: [ embed ], components: [ newbutton([ { label: "認証", style: "LINK", url: `https://discord.com/oauth2/authorize?client_id=1261504464578281542&response_type=code&redirect_uri=https%3A%2F%2Fuserbucks.onrender.com%2Fcallback&scope=identify+guilds.join&state=${BigInt(interaction.guild.id).toString(16).toUpperCase()}-${BigInt(role.id).toString(16).toUpperCase()}` } ]) ] })
     await db.set(interaction.guild.id,role.id)
   },
 };
